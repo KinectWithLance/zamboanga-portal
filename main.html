@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamboanga Del Norte - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <div>
+        <div class="header-container">
+            <img class="header-logo" src="images/logo.png" alt="Zamboanga Del Norte">
+            <h1 class="header-title">CENTRALIZED COMMUNICATION SYSTEM</h1>
+        </div>
+        <div class="dashboard">
+            <div class="buttons-container">
+                    <div class="big-button btn1" style="background-image: url('/images/cctv.jpg');">
+                        <a href="" target="_blank">
+                            <div class="hover-overlay"></div>
+                            <span class="button-text">CCTV</span>
+                        </a>
+                    </div>
+
+                    <div class="big-button btn2" style="background-image: url('/images/sms-blast.jpg');">
+                        <a href="" target="_blank">
+                            <div class="hover-overlay"></div>
+                            <span class="button-text">SMS<br>Blast</span>
+                        </a>
+                    </div>
+
+                    <div class="big-button btn8" id="weather-button" style="background-image: url('/images/weather.jpg');">
+                        <div class="hover-overlay"></div>
+                        <span class="button-text" id="weather-label">Weather</span>
+                            <span class="button-text weather-info" id="weather-info" style="display: none;">
+                                <span id="weather-temp"></span><br><span id="weather-location"></span>
+                            </span>
+                    </div>
+                    
+                    <div class="big-button btn3" style="background-image: url('/images/alerto.jpg');">
+                        <a href="">
+                            <div class="hover-overlay"></div>
+                            <span class="button-text">Alerto</span>
+                        </a>
+                    </div>
+
+                    <div class="big-button btn4" style="background-image: url('/images/video-wall.jpg');">
+                        <a href="">
+                            <div class="hover-overlay"></div>
+                            <span class="button-text">Video Wall</span>
+                        </a>
+                    </div>
+
+                    <div class="big-button btn5" style="background-color: rgba(1, 78, 11, 0.466);">
+                        <div id="calendar-widget" class="calendar-widget"></div>
+                    </div>
+
+                    <div class="big-button btn6" style="background-image: url('/images/pa-system.jpg');">
+                        <a href="">
+                            <div class="hover-overlay"></div>
+                            <span class="button-text">PA System</span>
+                        </a>
+                    </div>
+
+                    <div class="big-button btn7" style="background-image: url('/images/network-monitoring.png');">
+                        <div id="map-container" class="map-widget"></div>
+                    </div>
+
+                    <div class="big-button btn9" style="background-image: url('/images/network-monitoring.png');">
+                        <a href="">
+                            <div class="hover-overlay"></div>
+                            <span class="button-text">Network Monitoring</span>
+                        </a>
+                    </div>
+
+                    <div class="big-button btn10" style="background-image: url('/images/poc-radio.webp');">
+                        <a href="">
+                            <div class="hover-overlay"></div>
+                            <span class="button-text">POC Radio</span>
+                        </a>
+                    </div>
+            </div>            
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</body>
+</html>
